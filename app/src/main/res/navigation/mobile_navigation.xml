@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_workout"
-        android:name="com.batu.android_crono.ui.home.HomeFragment"
+        android:name="com.batu.android_crono.ui.workout.WorkoutFragment"
         android:label="@string/menu_workout"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_workout" />
 
     <fragment
         android:id="@+id/nav_timer"
