@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_countdown" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.batu.android_crono.ui.countdown.CountdownFragment"
+        android:name="com.batu.android_crono.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_countdown" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>
