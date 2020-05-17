@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_timer"
-        android:name="com.batu.android_crono.ui.gallery.GalleryFragment"
+        android:name="com.batu.android_crono.ui.timer.TimerFragment"
         android:label="@string/menu_timer"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_timer" />
 
     <fragment
         android:id="@+id/nav_countdown"

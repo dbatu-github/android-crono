@@ -1,14 +1,14 @@
-package com.batu.android_crono.ui.gallery;
+package com.batu.android_crono.ui.timer;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class TimerViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public TimerViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }
