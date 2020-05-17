@@ -1,4 +1,4 @@
-package com.batu.android_crono.ui.slideshow;
+package com.batu.android_crono.ui.countdown;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.batu.android_crono.R;
 
-public class SlideshowFragment extends Fragment {
+public class CountdownFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private CountdownViewModel countdownViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        countdownViewModel = new ViewModelProvider(this).get(CountdownViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_countdown, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        countdownViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
