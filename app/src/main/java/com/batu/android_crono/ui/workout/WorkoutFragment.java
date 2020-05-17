@@ -31,7 +31,7 @@ public class WorkoutFragment extends Fragment {
                 textView.setText(s);
             }
         });
-        FloatingActionButton fab = getActivity().findViewById(R.id.fab_add_workout);
+        FloatingActionButton fab = root.findViewById(R.id.fab_add_workout);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
