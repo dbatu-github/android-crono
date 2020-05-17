@@ -10,7 +10,7 @@ public class CountdownViewModel extends ViewModel {
 
     public CountdownViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is countdown fragment");
     }
 
     public LiveData<String> getText() {
